@@ -7,7 +7,7 @@
   
 For "Price_Potato.ipynb":
   1) Have "consumer_Price_index_Potatoes10yrs.csv" in the main folder prior to running Price_Potato.ipynb
-  2) Will output "Price_inflation.csv"
+  2) Will output "Price_inflation_normalized.csv"
 
 
 For "weather api data.ipynb":
