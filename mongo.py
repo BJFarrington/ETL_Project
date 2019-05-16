@@ -1,14 +1,21 @@
 import pymongo
-import weather api data
+import newweatherapidata
+import datetime
 
 
 conn = 'mongodb://localhost:27017'
 client = pymongo.MongoClient(conn)
 
-db = client.idaho_potatoes_db
+db = client.idahopotatoes_db
 
 
 
-#potatoes_col = db.temp
+potatoes_col = db.temp
 
-#potatoes_col.insert_one(all_data)
+post = {"Data" : df}
+
+potatoes_col.insert_one(post)
+
+results = potatoes_col.find()
+for result in results:
+    print(result)
